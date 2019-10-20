@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>WEB 初期テンプレート HTML5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="●●●●">
+<meta name="robots" content="index, follow">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+
+<meta property="og:site_name" content="●●●●">
+<meta property="og:type" content="article">
+<meta property="og:title" content="●●●●">
+<meta property="og:description" content="●●●●">
+<meta property="og:url" content="http://●●●●.com/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="http://●●●●.com/img/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- favicon 152x152 png -->
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Raleway:400">
+<link rel="stylesheet" href="css/style_sp.css" media="screen and (max-width: 959px)">
+<link rel="stylesheet" href="css/style.css" media="screen and (min-width: 960px)">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+
+
+
+<ul class="sample">
+	<li><img src="https://placehold.jp/3d4070/ffffff/300x250.png?text=sample%20image"></li>
+	<li><img src="https://placehold.jp/3d4070/ffffff/400x300.png"></li>
+	<li><img src="https://placehold.jp/073d40/ffffff/300x250.png"></li>
+	<li><img src="https://source.unsplash.com/random/400x300?sig=1"></li>
+	<li><img src="https://source.unsplash.com/random/400x300?sig=2"></li>
+</ul>
+
+
+
+<header>
+	<h1>h1見出し</h1>
+	<h2>h2見出し</h2>
+	<h3>h3見出し</h3>
+	<h4>h4見出し</h4>
+	<h5>h5見出し</h5>
+	<h6>h6見出し</h6>
+</header>
+
+<nav>
+	<ul>
+		<li>ulリスト</li>
+		<li>ulリスト</li>
+		<li>ulリスト</li>
+	</ul>
+</nav>
+
+<article>
+	<section>
+		<h1>みだし１</h1>
+		<p>色は匂へど散りぬるを、我が世たれぞ常ならむ。有為の奥山今日越えて、浅き夢見じ酔ひもせず。<a href="#">いろはにほへとちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせす。</a></p>
+
+		<figure>
+			<img src="https://placehold.jp/3d4070/ffffff/300x250.png?text=300%20x%20250" alt="">
+			<figcaption>figcaption</figcaption>
+		</figure>
+
+		<picture>
+			<source media="(max-width: 767px)" srcset="img/sp/header.png">
+			<source media="(min-width: 768px)" srcset="img/header.png 1x, img/@2x/header.png 2x">
+			<img src="img/header.png" alt="●●●●●●●●">
+		</picture>
+	</section>
+
+	<section>
+		<h2>みだし２</h2>
+		<p>いろはにほへとちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせす。</p>
+	</section>
+</article>
+
+<aside>
+	<h2>adsize</h2>
+	<ul>
+		<li><a href="#">970x90</a></li>
+		<li><a href="#">728x90</a></li>
+		<li><a href="#">468x60</a></li>
+		<li><a href="#">336x280</a></li>
+		<li><a href="#">320x100</a></li>
+		<li><a href="#">300x250</a></li>
+		<li><a href="#">300x600</a></li>
+		<li><a href="#">234x60</a></li>
+	</ul>
+</aside>
+
+<footer class="animated bounce infinite">
+	Copyright &copy; 2018- <a href="http://www.kiki-verb.com/" target="_blank" rel="noopener noreferrer">kiki-verb.com</a>. All Rights Reserved.
+</footer>
+
+</div>
+<script>
+$(function(){
+	$("p").css('color', '#cc3333');
+
+	$('.sample').slick({
+		autoplay:true,
+		autoplaySpeed:2000,
+		dots:true,
+		pauseOnHover:true
+	});
+
+	//ページ内リンクへのスムーズスクロール
+	$('a[href^="#"]').click(function(){
+		var speed = 1000;
+		var href= $(this).attr("href");
+		var target = $(href == "#" || href == "" ? 'html' : href);
+		var position = target.offset().top;
+		$("html, body").animate({scrollTop:position}, speed, "swing");
+		return false;
+	});
+
+	// input[type=file}
+	$(document).on('change', 'input[type=file]', function(){
+		var _that = $(this);
+		var file = _that.prop('files')[0];
+		var reader = new FileReader();
+		reader.onload = function(){
+			_that.prev().text(file.name);
+			_that.parent().prevAll().remove();
+			_that.parent().before('<img src="' + reader.result + '" width="96" />');
+		}
+		if(file.size > 2 * 1024 * 1024){ // 2MB以上なら
+			alert('容量が大きすぎます。2MB以下のファイルをアップロードしてください。');
+			return false;
+		}
+		reader.readAsDataURL(file);
+	});
+});
+</script>
+</body>
+</html>

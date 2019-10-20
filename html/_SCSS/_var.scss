@@ -1,0 +1,32 @@
+//======================================
+//	■Var
+//======================================
+$color-darkest: #131316;
+$color-darker: #232326;
+$color-dark: #3c3c3f;
+$color-darkbright: #ababab;
+$color-darkbrighter: #c9c9c9;
+$color-darkbrightest: #ebebeb;
+
+$link-color: #38b5cb;
+$link-color-hover: #7bcedd;
+
+$font-size-ss: 9px;
+$font-size-s: 11px;
+$font-size-m: 14px;
+$font-size-l: 18px;
+$font-size-ll: 24px;
+$font-size-xl: 30px;
+$font-size-xxl: 42px;
+
+
+
+//======================================
+//	■Function
+//======================================
+
+// 画像比率の自動計算
+@function get_vw($size, $viewport:750){
+	$rate: 100 / $viewport;
+	@return $rate  $size  1vw;
+}

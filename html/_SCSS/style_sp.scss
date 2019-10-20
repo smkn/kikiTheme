@@ -1,0 +1,85 @@
+//	■Var 変数設定
+//@import "var";
+
+
+
+//============================================================================
+//	■Base
+//============================================================================
+body {
+	background-color: #f3f3f3;
+	color: #222;
+	font: 14px/1.4 sans-serif;
+	text-justify: inter-ideograph;
+	text-align: justify;
+	line-break: normal;
+	word-break: normal;
+}
+a {
+	color: #38b5cb;
+}
+img, iframe {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+//============================================================================
+//	■Common-Modules
+//============================================================================
+#wrap {
+	width: 92vw;
+	margin: 0 auto;
+}
+
+header {
+}
+
+article {
+}
+
+footer {
+}
+
+
+
+//============================================================================
+//	■General-Modules
+//============================================================================
+// input[type='file']
+// <label class="fileUpload"><p><i class="fa fa-cloud-upload"></i> 写真をアップロード</p><input type="file" name="user_icon" required /></label>
+label.fileUpload {
+	border: 1px solid #999;
+	background-color: #fff;
+	padding: 5px;
+	display: block;
+	text-align: left;
+
+	& > p {
+		display: inline-block;
+		text-align: left;
+	}
+
+	input[type='file'] {
+		display: none;
+	}
+}
+
+
+
+//============================================================================
+//	■Utility
+//============================================================================
+.pc_only{display:none !important}
+.sp_only{display:block}
+
+.clear::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.is-error {
+	color: #cc0044;
+}

@@ -1,0 +1,167 @@
+/*!
+Author: kiki verb
+Author URI: http://www.kiki-verb.com/
+Version: 1.0
+*/
+
+//============================================================================
+//	HTML/CSS規約
+//
+//	複数単語はキャメルケースで記述する
+//	クラス名は、モジュール名_サブモジュール名の順番で、親モジュールの名前を接頭語として付与
+//	<section class="articlesHeadline">
+//		<h2 class="articlesHeadline_title">タイトル</h2>
+//		<div class="articlesHeadline_summary">
+//			<p class="articlesHeadline_summary_date">2018/01/23</p>
+//			<p class="articlesHeadline_summary_description">説明文</p>
+//		</div>
+//	</section>
+//
+//	■Base
+//	サイト全体のフォントサイズや行間、a要素の文字色など、使用される場所を問わずタグが本来持つべき設定をベースルールとして記述
+//	要素自体に対して定義するため id や class を使用しない
+//
+//	■Common-Compornent
+//	ヘッダー・フッター・サイドバーなど各ページで固定的に共有するパーツ・オブジェクトを設計
+//	ID指定のほか、絶対に変わらないであろう親子階層の場合の > などで設定する
+//
+//	■General-Compornent
+//	主に各ページごとに使われたり使われなかったりするパーツ・オブジェクトを設計
+//	直下タグは使わず、ちょっと手間でもクラス名をつけて対応
+//
+//	■Utility
+//	clearfix や .pc/.sp など、調整用のレイヤーや比較的小さなスタイルを定義
+//	JSで使われる前提の場合は js_ プレフィックスを使用
+//
+//============================================================================
+
+//	■Var 変数設定
+//@import "var";
+
+
+
+//======================================
+//	■Base
+//======================================
+body {
+//	background-color: $color-darkest;
+	background-color: #f9f9f9;
+	color: #222;
+	font: 14px/1.4 Ubuntu, Verdana, "メイリオ", Meiryo, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", FontAwesome, sans-serif;
+	text-justify: inter-ideograph;
+	text-align: justify;
+}
+
+a {
+	color:#fb5322;
+	text-decoration: none;
+	transition: all 0.5s ease;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+
+
+//======================================
+//	■Common-Compornent
+//======================================
+#wrap {
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+article {
+}
+
+footer {
+}
+
+
+
+//======================================
+//	■General-Compornent
+//======================================
+// eyecatch
+#eyecatch {
+	width: 100%;
+	height: 450px;
+	background: url('img/eyecatch.png') repeat center top / contain;
+
+	@media screen and (min-width: 768px) and (max-width: 1200px) {
+		width:calc((100% / 2) - 20px);
+	}
+	@media screen and (min-width: 1201px) and (max-width: 1420px) {
+		width:calc((100% / 3) - 20px);
+	}
+	@media screen and (min-width: 1421px) {
+		width:calc((100% / 4) - 20px);
+	}
+}
+
+
+
+// input[type='file']
+// <label class="fileUpload"><p><i class="fa fa-cloud-upload"></i> 写真をアップロード</p><input type="file" name="user_icon" required /></label>
+label.fileUpload {
+	border: 1px solid #999;
+	background-color: #fff;
+	padding: 5px;
+	display: block;
+	text-align: left;
+	cursor: pointer;
+
+	& > p {
+		display: inline-block;
+		text-align: left;
+	}
+
+	input[type='file'] {
+		display: none;
+	}
+}
+
+
+
+//======================================
+//	■Utility
+//======================================
+.pc_only{display:block}
+.sp_only{display:none !important}
+
+.clear::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.is_error {
+	color: #cc0044;
+	font-weight: bold;
+}
+.opa:hover{
+	opacity: 0.7;
+}
+
+
+
+/*==============================
+	SP ONLY
+==============================*/
+@media screen and (max-width: 767px) {
+
+}
+
+
+
+/*==============================
+	PC ONLY
+==============================*/
+@media screen and (min-width: 768px) {
+
+}

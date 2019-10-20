@@ -1,0 +1,6 @@
+﻿/*!
+Author: kiki verb
+Author URI: http://www.kiki-verb.com/
+Version: 1.0
+*/body{background-color:#f9f9f9;color:#222;font:14px/1.4 Ubuntu, Verdana, "メイリオ", Meiryo, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", FontAwesome, sans-serif;text-justify:inter-ideograph;text-align:justify}a{color:#fb5322;text-decoration:none;transition:all 0.5s ease}a:hover{text-decoration:underline}header{display:flex;justify-content:space-between;align-items:center}#eyecatch{width:100%;height:450px;background:url("img/eyecatch.png") repeat center top/contain}@media screen and (min-width: 768px) and (max-width: 1200px){#eyecatch{width:calc((100% / 2) - 20px)}}@media screen and (min-width: 1201px) and (max-width: 1420px){#eyecatch{width:calc((100% / 3) - 20px)}}@media screen and (min-width: 1421px){#eyecatch{width:calc((100% / 4) - 20px)}}label.fileUpload{border:1px solid #999;background-color:#fff;padding:5px;display:block;text-align:left;cursor:pointer}label.fileUpload>p{display:inline-block;text-align:left}label.fileUpload input[type='file']{display:none}.pc_only{display:block}.sp_only{display:none !important}.clear::after{content:"";display:block;clear:both}.is_error{color:#cc0044;font-weight:bold}.opa:hover{opacity:0.7}
+/*# sourceMappingURL=style.css.map */

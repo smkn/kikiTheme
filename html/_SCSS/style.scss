@@ -45,22 +45,40 @@ Version: 1.0
 //======================================
 body {
 //	background-color: $color-darkest;
-	background-color: #f9f9f9;
-	color: #222;
-	font: 14px/1.4 'Noto Sans JP', sans-serif;
+	background-color: #f9fcff;
+	color: #292929;
+	font: 16px/1.6 'Noto Sans JP', sans-serif;
 	text-justify: inter-ideograph;
 	text-align: justify;
 }
 
 a {
-	color:#fb5322;
+	color:#3ea4b8;
 	text-decoration: none;
-	transition: all 0.5s ease;
+	position: relative;
+	transition: all 0.2s ease;
 
-	&:hover {
-		text-decoration: underline;
+	&::before {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		content: '';
+		background: rgba(#88cfda, .7);
+		transform-origin: right bottom;
+		transform: scale(0, 0.4);
+		transition: transform .2s;
+	}
+	&:hover::before {
+		transform-origin: left bottom;
+		transform: scale(1, 0.4);
 	}
 }
+
+.svgLogoColored01{fill:#88cfda}
+.svgLogoColored02{fill:#3ea4b8}
 
 
 
@@ -68,18 +86,75 @@ a {
 //	■Common-Compornent
 //======================================
 #wrap {
-}
 
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 70px;
+		height: 100vh;
 
-article {
-}
+		a {
+			display: block;
+			padding: 10px;
 
-footer {
+			&::before {
+				content: none;
+			}
+
+			.header_logo {
+				width: 50px;
+				height: 50px;
+				transition: all 0.7s ease;
+
+				&:hover {
+					transform: rotateY(360deg);
+				}
+			}
+		}
+
+		#header_copyright {
+			font-size: 12px;
+			transform: rotate(90deg);
+			position: absolute;
+			width: 200px;
+			top: 50%;
+			left: -64px;
+			letter-spacing: 2px;
+			color: #929292;
+		}
+	}
+
+	#content {
+		width: 100%;
+		padding-left: 70px;
+
+		#menu {
+			position: fixed;
+			width: calc(100% - 70px);
+			text-align: right;
+			letter-spacing: 1px;
+			left: 70px !important;
+
+			ul {
+				padding: 20px 0;
+			}
+
+			li {
+				display: inline-block;
+				margin-right: 20px;
+				font-size: 18px;
+
+				a {
+					color: #292929;
+				}
+			}
+
+			.midnightHeader.white a {
+				color: #fff !important;
+			}
+		}
+	}
 }
 
 
@@ -87,6 +162,40 @@ footer {
 //======================================
 //	■General-Compornent
 //======================================
+// home
+#home_eyecatch {
+	background: url('../img/eyecatch.png') no-repeat center center / cover;
+	height: 640px;
+	padding: 0 40px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+
+	&_inbox {
+
+		p {
+			font-size: 92px;
+			text-transform: uppercase;
+			font-weight: bold;
+			line-height: 1.1;
+
+			span {
+				background: linear-gradient(transparent 55%, rgba(255, 255, 255, .2) 55%, rgba(255, 255, 255, .2) 90%, transparent 90%);
+			}
+		}
+		h1 {
+			margin-top: 40px;
+			font-size: 30px;
+		}
+	}
+
+}
+
+
+
+
+
+
 // eyecatch
 #eyecatch {
 	width: 100%;
@@ -101,28 +210,6 @@ footer {
 	}
 	@media screen and (min-width: 1421px) {
 		width:calc((100% / 4) - 20px);
-	}
-}
-
-
-
-// input[type='file']
-// <label class="fileUpload"><p><i class="fa fa-cloud-upload"></i> 写真をアップロード</p><input type="file" name="user_icon" required /></label>
-label.fileUpload {
-	border: 1px solid #999;
-	background-color: #fff;
-	padding: 5px;
-	display: block;
-	text-align: left;
-	cursor: pointer;
-
-	& > p {
-		display: inline-block;
-		text-align: left;
-	}
-
-	input[type='file'] {
-		display: none;
 	}
 }
 

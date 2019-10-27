@@ -23,3 +23,12 @@ $color-border: #dbdbdb;
 	$rate: 100 / $viewport;
 	@return $rate  $size  1vw;
 }
+
+
+
+//======================================
+//	■keyframes
+//======================================
+@keyframes pulse {
+	0% { box-shadow: 0 0 0 0 rgba($color-key-main, .25); }
+}

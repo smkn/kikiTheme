@@ -66,7 +66,6 @@ a.no-link-effect {
 	color: $color-font-link;
 	text-decoration: none;
 	position: relative;
-	transition: none;
 	background: none;
 
 	&:hover {
@@ -86,7 +85,9 @@ a.no-link-effect {
 	display: flex;
 
 	header {
-		flex: 0 0 70px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 70px;
 		display: flex;
 
 		#header_inbox {
@@ -123,7 +124,9 @@ a.no-link-effect {
 	}
 
 	#content {
-		flex: 0 0 calc(100% - 70px);
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: calc(100% - 70px);
 
 		#menu {
 			position: fixed;
@@ -145,11 +148,12 @@ a.no-link-effect {
 
 			ul {
 				padding: 20px 0;
+				margin-right: 50px;
 			}
 
 			li {
 				display: inline-block;
-				margin-right: 20px;
+				margin-left: 30px;
 				font-size: 18px;
 
 				a {
@@ -162,7 +166,63 @@ a.no-link-effect {
 			padding-right: 50px;
 			margin-top: 50px;
 		}
+
+		footer {
+			margin-top: 80px;
+
+			&:hover, &:focus {
+				animation: pulse 1s;
+				box-shadow: 0 0 0 50px rgba($color-key-main, 0);
+			}
+
+			a {
+				display: block;
+				background-color: $color-key-main;
+				border: 1px solid transparent;
+				color: #fff;
+				padding: 50px 60px 100px;
+				position: relative;
+
+				h2 {
+					font-size: 4.2vw;
+					background: linear-gradient(rgba($color-key-sub, .7), rgba($color-key-sub, .7)) 0 100%/0 35% no-repeat;
+					transition: all .5s ease;
+					display: inline-block;
+				}
+
+				svg {
+					width: 200px;
+					height: 200px;
+					position: absolute;
+					right: 20px;
+					bottom: 20px;
+					opacity: 0;
+					transition: all .5s ease;
+				}
+
+				&:hover {
+					background-color: #fff;
+					border: 1px solid $color-key-main;
+					color: $color-key-main;
+
+					h2 {
+						background-size: 100% 35%;
+					}
+
+					svg {
+						opacity: 0.2;
+					}
+				}
+			}
+		}
 	}
+}
+
+#wisdom {
+	padding: 10px 0;
+	text-align: center;
+	font-size: 12px;
+	color: $color-font-lighten;
 }
 
 
@@ -170,36 +230,6 @@ a.no-link-effect {
 //======================================
 //	■General-Compornent
 //======================================
-// home
-#home_eyecatch {
-	background: url('../img/eyecatch.png') no-repeat center center / cover;
-	height: 640px;
-	padding: 0 40px;
-	color: #fff;
-	display: flex;
-	align-items: center;
-
-	&_inbox {
-
-		p {
-			font-size: 92px;
-			text-transform: uppercase;
-			font-weight: 700;
-			line-height: 1.1;
-
-			span {
-				background: linear-gradient(transparent 55%, rgba(255, 255, 255, .2) 55%, rgba(255, 255, 255, .2) 90%, transparent 90%);
-			}
-		}
-		h1 {
-			margin-top: 40px;
-			font-size: 30px;
-		}
-	}
-}
-
-
-
 .headlineFirst {
 	text-align: center;
 	font-size: 48px;
@@ -254,9 +284,16 @@ a.no-link-effect {
 		background-color: #fff;
 		padding: 20px;
 		box-shadow: 0 0 10px rgba($color-font-default, .05);
+
+		a {
+			display: inline-block;
+			margin-top: 20px;
+		}
 	}
 	.verticalTwoBox_picture {
-		flex: 0 0 40%;
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 40%;
 		z-index: 9;
 
 		img {
@@ -284,23 +321,50 @@ a.no-link-effect {
 	}
 }
 
-.worksListBox {
+.readmore {
+	margin-top: 30px;
+	text-align: center;
+
+	a {
+		font-size: 18px;
+		display: inline-block;
+		background-color: $color-key-main;
+		padding: 10px 80px 12px;
+		color: #fff;
+		border: 1px solid transparent;
+
+		&:hover, &:focus {
+			animation: pulse 1s;
+			box-shadow: 0 0 0 50px rgba($color-key-main, 0);
+			color: $color-key-main;
+			border: 1px solid $color-key-main;
+		}
+	}
+}
+
+.cardListBox {
 	font-size: 0;
 	margin-left: -20px;
+	display: flex;
+	flex-wrap: wrap;
 
-	.worksListBox_list {
-		display: inline-block;
+	.cardListBox_list {
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: calc((100% / 3) - 20px);
 		font-size: 16px;
-		width: calc((100% / 3) - 20px);
 		margin: 0 0 20px 20px;
-		vertical-align: top;
+		background-color: #fff;
+		box-shadow: 0 0 10px rgba($color-font-default, .05);
+		transition: all 0.5s ease;
+
+		&:hover {
+			box-shadow: 0 5px 10px rgba($color-font-default, .1);
+		}
 
 		a {
 			display: block;
 			color: $color-font-default;
-			background-color: #fff;
-			box-shadow: 0 0 10px rgba($color-font-default, .05);
-			transition: all 0.5s ease;
 
 			h3 {
 				display: inline;
@@ -310,18 +374,18 @@ a.no-link-effect {
 				transition: all 0.3s ease;
 				background: linear-gradient(rgba($color-key-sub, .7), rgba($color-key-sub, .7)) 0 100%/0 35% no-repeat;
 			}
-			&:hover {
-				box-shadow: 0 5px 10px rgba($color-font-default, .1);
-
-					h3 {
-						background-size: 100% 35%;
-					}
+			&:hover h3 {
+				background-size: 100% 35%;
 			}
 
-			.worksListBox_list_picture {
+			.cardListBox_list_picture {
 				margin-bottom: 20px;
+
+				img {
+					width: 100%;
+				}
 			}
-			.worksListBox_list_content {
+			.cardListBox_list_content {
 				padding: 0 20px 20px;
 
 				.content_sectionBox_para {
@@ -355,29 +419,44 @@ a.no-link-effect {
 		align-items: center;
 
 		time {
-			flex: 0 0 90px;
+			display: block;
+			flex-grow: 0;
+			flex-shrink: 0;
+			flex-basis: 90px;
 		}
 	}
 }
 
 
 
+//======================================
+//	■Page-Compornent
+//======================================
+// home
+#home_eyecatch {
+	background: url('../img/eyecatch.png') no-repeat center center / cover;
+	height: 640px;
+	padding: 0 40px;
+	color: #fff;
+	display: flex;
+	align-items: center;
 
+	&_inbox {
 
-// eyecatch
-#eyecatch {
-	width: 100%;
-	height: 450px;
-	background: url('img/eyecatch.png') repeat center top / contain;
+		p {
+			font-size: 92px;
+			text-transform: uppercase;
+			font-weight: 700;
+			line-height: 1.1;
 
-	@media screen and (min-width: 768px) and (max-width: 1200px) {
-		width:calc((100% / 2) - 20px);
-	}
-	@media screen and (min-width: 1201px) and (max-width: 1420px) {
-		width:calc((100% / 3) - 20px);
-	}
-	@media screen and (min-width: 1421px) {
-		width:calc((100% / 4) - 20px);
+			span {
+				background: linear-gradient(transparent 55%, rgba(255, 255, 255, .2) 55%, rgba(255, 255, 255, .2) 90%, transparent 90%);
+			}
+		}
+		h1 {
+			margin-top: 40px;
+			font-size: 30px;
+		}
 	}
 }
 

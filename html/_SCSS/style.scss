@@ -186,7 +186,7 @@ a.no-link-effect {
 				h2 {
 					font-size: 4.2vw;
 					background: linear-gradient(rgba($color-key-sub, .7), rgba($color-key-sub, .7)) 0 100%/0 35% no-repeat;
-					transition: all .5s ease;
+					transition: background .5s ease;
 					display: inline-block;
 				}
 
@@ -288,6 +288,7 @@ a.no-link-effect {
 		a {
 			display: inline-block;
 			margin-top: 20px;
+			font-size: 18px;
 		}
 	}
 	.verticalTwoBox_picture {
@@ -360,6 +361,10 @@ a.no-link-effect {
 
 		&:hover {
 			box-shadow: 0 5px 10px rgba($color-font-default, .1);
+
+			h3 {
+				background-size: 100% 35%;
+			}
 		}
 
 		a {
@@ -373,9 +378,6 @@ a.no-link-effect {
 				position: relative;
 				transition: all 0.3s ease;
 				background: linear-gradient(rgba($color-key-sub, .7), rgba($color-key-sub, .7)) 0 100%/0 35% no-repeat;
-			}
-			&:hover h3 {
-				background-size: 100% 35%;
 			}
 
 			.cardListBox_list_picture {

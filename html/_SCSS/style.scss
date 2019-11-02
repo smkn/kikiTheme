@@ -230,6 +230,17 @@ a.no-link-effect {
 //======================================
 //	■General-Compornent
 //======================================
+.pageTitle {
+	position: relative;
+
+	&::before {
+		font-size: 120px;
+		margin-bottom: -120px;
+		color: rgba($color-font-default, .05);
+		display: block;
+		content: attr(data-pageTitle);
+	}
+}
 .headlineFirst {
 	text-align: center;
 	font-size: 48px;
@@ -267,9 +278,37 @@ a.no-link-effect {
 	margin-bottom: 20px;
 }
 
+.headlinePage {
+	margin: 100px 0;
+}
 .headlineSubtext {
 	text-align: center;
 	margin: -10px 0 30px;
+}
+
+.paragraph {
+	margin: 30px 0;
+}
+
+.pubDate {
+	margin-top: -20px;
+	display: block;
+	color: $color-font-lighten;
+	text-align: right;
+}
+
+.tagListBox {
+	margin-top: 5px;
+	font-size: 0;
+
+	.tagListBox_list {
+		display: inline-block;
+		margin: 5px 5px 0 0;
+		font-size: 11px;
+		border: 1px solid $color-border;
+		padding: 2px 8px;
+		background-color: rgba($color-bg, .85);
+	}
 }
 
 
@@ -278,11 +317,11 @@ a.no-link-effect {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 20px;
+	margin-top: 30px;
 
 	.verticalTwoBox_content {
 		background-color: #fff;
-		padding: 20px;
+		padding: 30px;
 		box-shadow: 0 0 10px rgba($color-font-default, .05);
 
 		a {
@@ -393,19 +432,6 @@ a.no-link-effect {
 				.content_sectionBox_para {
 					margin-top: 10px;
 				}
-				.tagListBox {
-					margin-top: 5px;
-					font-size: 0;
-
-					.tagListBox_list {
-						display: inline-block;
-						margin: 5px 5px 0 0;
-						font-size: 11px;
-						border: 1px solid $color-border;
-						padding: 2px 8px;
-						background-color: rgba($color-bg, .85);
-					}
-				}
 			}
 		}
 	}
@@ -460,6 +486,25 @@ a.no-link-effect {
 			font-size: 30px;
 		}
 	}
+}
+
+// single
+.single_content_sectionBox {
+	max-width: 1280px;
+	margin: 0 auto;
+
+	.tagListBox_list {
+		margin: 0 8px 0 0;
+		padding: 5px 10px;
+		font-size: 15px;
+		background-color: #fff;
+	}
+}
+#postContent {
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba($color-font-default, .05);
+	padding: 30px;
+	margin-top: 30px;
 }
 
 

@@ -1,0 +1,49 @@
+//======================================
+//	■Var
+//======================================
+$color-bg: #f5f9fc;
+$color-key-main: #3ea4b8;
+$color-key-sub: #88cfda;
+
+
+$color-font-default: #293039;
+$color-font-lighten: #929292;
+$color-font-link: $color-key-main;
+
+$color-border: #dbdbdb;
+
+
+
+//======================================
+//	■Function
+//======================================
+
+// 画像比率の自動計算
+@function get_vw($size, $viewport:750){
+	$rate: 100 / $viewport;
+	@return $rate  $size  1vw;
+}
+
+
+
+//======================================
+//	■keyframes
+//======================================
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba($color-key-main, .25);
+	}
+}
+.pulse{animation: pulse 1s}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, 50px, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+.fadeInUp{animation: fadeInUp 1s}

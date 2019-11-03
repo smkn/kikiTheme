@@ -1,0 +1,13 @@
+/*
+ * SRC (smkn Reset Css)
+ * Copyright (c) 2013- smkn( https://www.kiki-verb.com/ )
+ *
+ * Version : 4.0.6
+ * Updated : 2019.07.18
+ * Author  : Kenichi Shimizu a.k.a. smkn( @kiki verb )
+ * Website : https://www.kiki-verb.com/
+ * License : Dual licensed under the MIT or GPL( version 2 or later ) licenses.
+ *           http://www.opensource.org/licenses/mit-license.php
+ *           http://www.gnu.org/licenses/gpl.html
+ */
+*,*::before,*::after{background-color:transparent;border:none;box-sizing:border-box;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;line-height:inherit;margin:0;outline:0;padding:0;vertical-align:baseline}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;counter-reset:increment;font-family:sans-serif;font-style:normal;font-weight:400;line-height:1;overflow-y:scroll;word-break:break-all;word-wrap:break-word}article,aside,details,figcaption,figure,footer,header,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}iframe{vertical-align:bottom}img,svg{border:0;font-size:0;line-height:0;vertical-align:middle}svg{fill:currentColor}svg:not(:root){overflow:hidden}embed,img,object{max-width:100%}a{background-color:transparent;-webkit-text-decoration-skip:objects}a,button,input,label,select,textarea{-ms-touch-action:manipulation;touch-action:manipulation}button,input:not([type=image]),select,textarea{border:1px solid #ddd;border-radius:0;text-transform:none;vertical-align:middle;background-color:#fff}[type=text],[type=password],[type=email],[type=number],select,textarea{width:100%}textarea{overflow-y:auto;resize:vertical;height:100px}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}sup{vertical-align:text-top}sub{vertical-align:text-bottom}b,em,strong{font-weight:700}i{font-style:italic}del,s{text-decoration:line-through}code,kbd,pre,samp{font-family:monospace;font-size:1rem}table{border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%}caption,th{text-align:left}ol,ul{list-style:none}blockquote{quotes:none}blockquote::after,blockquote::before{content:''}hr{border-top:1px solid #ddd}:focus{outline:0}

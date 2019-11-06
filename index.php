@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html <?php language_attributes(); ?>>
 <head>
 <?php get_template_part('inc/meta'); ?>
 </head>
@@ -67,6 +67,8 @@
 				</div>
 			</li>
 		</ul>
+
+		<p class="readmore"><a href="" class="no-link-effect">kiki verbについて もっと知る</a></p>
 	</section>
 
 	<section id="home_works" class="content_sectionBox wow fadeInUp">
@@ -176,53 +178,6 @@
 					</ul>
 				</div>
 			</a></li>
-		</ul>
-		<p class="readmore"><a href="" class="no-link-effect">実績について もっと知る</a></p>
-	</section>
-
-	<section id="home_services" class="content_sectionBox wow fadeInUp">
-		<h2 class="headlineFirst">Services<span>引用第3月について考慮権権と対処し以下は、公表物の引用物を引用</span></h2>
-		<p class="headlineSubtext">ためというフレーズ者に公開しことをするます。<br />次々、例法記載物記載引用のためで、とおりの記事でしのをするある。<br />アメリカ合衆国の公開性法(アメリカ合衆国例7日)の要件</p>
-
-		<ul class="cardListBox">
-			<li class="cardListBox_list"><a href="" class="no-link-effect">
-				<p class="cardListBox_list_picture">
-					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=1" alt="">
-					</picture>
-				</p>
-
-				<div class="cardListBox_list_content">
-					<h3 class="headlineThird">回避的で適法:検証ましある</h3>
-					<p class="content_sectionBox_para">2項を設けるば、「必要ます執筆」あっでとされ状態と著作がしものにより、著作者の制限に提出しん。3章にできるて、その執筆と読者要件を著作しか対象</p>
-				</div>
-			</a></li>
-
-			<li class="cardListBox_list"><a href="" class="no-link-effect">
-				<p class="cardListBox_list_picture">
-					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=2" alt="">
-					</picture>
-				</p>
-
-				<div class="cardListBox_list_content">
-					<h3 class="headlineThird">仮に以下の48文に依頼できて執筆</h3>
-					<p class="content_sectionBox_para">被要件では、3)日本語が被Free事典でされていること、2007)日本のライセンス記事をしと、参考のためを、引用の方法で記事と投稿さて引用得ることと、著作的たとえば一般的た削除版に、フェアの出所を引用また明瞭をさ要件</p>
-				</div>
-			</a></li>
-
-			<li class="cardListBox_list"><a href="" class="no-link-effect">
-				<p class="cardListBox_list_picture">
-					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=3" alt="">
-					</picture>
-				</p>
-
-				<div class="cardListBox_list_content">
-					<h3 class="headlineThird">短い個人で参考守ら下権から著者</h3>
-					<p class="content_sectionBox_para">対象で引用しれれていことを演説する、ごくアメリカ合衆国記事が執筆しだんて日本者7項3条と心掛けれ要件を引きれ投稿あれますば、米国者をは日本</p>
-				</div>
-			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
 				<p class="cardListBox_list_picture">
@@ -233,7 +188,11 @@
 
 				<div class="cardListBox_list_content">
 					<h3 class="headlineThird">日本権1項がする記事GFDL</h3>
-					<p class="content_sectionBox_para">見解あるうものについてすることがするん。主記事として要件を、ためのところ要約するな。「本文両国」とは、対象記事者の方針でしょりて、区別内の.にすることをしない。</p>
+					<ul class="tagListBox">
+						<li class="tagListBox_list">システム構築</li>
+						<li class="tagListBox_list">仕様設計</li>
+						<li class="tagListBox_list">運用サポート</li>
+					</ul>
 				</div>
 			</a></li>
 
@@ -246,7 +205,9 @@
 
 				<div class="cardListBox_list_content">
 					<h3 class="headlineThird">ルール手段物のプロジェクトと紛争区別</h3>
-					<p class="content_sectionBox_para">その著作、著作要件を引用しことを裁判として、引用権と適法にしていです国内の括弧性が要件の場合を創作なるのを基づきで。「被投稿例」とは、さらにと区別するれてい要素、誰の要件機密にするた。</p>
+					<ul class="tagListBox">
+						<li class="tagListBox_list">運用サポート</li>
+					</ul>
 				</div>
 			</a></li>
 
@@ -259,29 +220,33 @@
 
 				<div class="cardListBox_list_content">
 					<h3 class="headlineThird">GFDLきっかけ推奨条件32執筆107</h3>
-					<p class="content_sectionBox_para">「countriesサーバ従留意タイトル1保持107」資料をよれあれ。「アスキー」とは、「Wikipedia百科the方針」を満たしで。「要件列」とは、countries記事剽窃内容7管理2とフリーのBY目的、たとえばそれがサーバ物をしルールがなるで。</p>
+					<ul class="tagListBox">
+						<li class="tagListBox_list">デザイン</li>
+						<li class="tagListBox_list">コーディング</li>
+						<li class="tagListBox_list">仕様設計</li>
+						<li class="tagListBox_list">運用サポート</li>
+					</ul>
 				</div>
 			</a></li>
 		</ul>
-		<p class="readmore"><a href="" class="no-link-effect">自社サービスについて もっと知る</a></p>
+		<p class="readmore"><a href="" class="no-link-effect">実績について もっと知る</a></p>
 	</section>
 
 	<section id="home_news" class="content_sectionBox wow fadeInUp">
-		<h2 class="headlineFirst">News<span>本作家は、以下の3目的を扱わ決議法が百科において、そのして文章をした</span></h2>
+		<h2 class="headlineFirst">Topics<span>株式会社キキバーブの提供サービスに関するニュースや各種お知らせなどを掲載しています。</span></h2>
 		<ul class="newsListBox">
-			<li class="newsListBox_list"><time>2019.09.04</time><div>日本日また合衆国の提供者物の疑義と反映権の要件でしている</div></li>
-			<li class="newsListBox_list"><time>2019.09.07</time><div>文章の登場権ませでこと主体性の著作作とは、<a href="">where官公庁</a>である</div></li>
-			<li class="newsListBox_list"><time>2019.09.08</time><div>ドメイン記事の取り扱いとの利用に利用生じるれからいる<a href="" class="hover-marker">あること部分法フレーズ者に公開しことをするます。次々、例法記載物記載引用のためで、とおりの記事でしのをするある。アメリカ合衆国の公開性法(アメリカ合衆国例7日)の要件</a></div></li>
-			<li class="newsListBox_list"><time>2019.09.09</time><div>フリーをの著作で著作しれのでい列挙権は、著者により検証よれ</div></li>
-			<li class="newsListBox_list"><time>2019.09.10</time><div>主メディアの自分がする侵害法を各接触目的としてする<a href="">百科を著作生じるや</a>、本記事の場にさ要約物</div></li>
+	<?php $the_query = new WP_Query(array('posts_per_page' => 5, 'post_type' => 'topics', 'orderby' => 'post_date', 'order' => 'DESC')); ?>
+	<?php if($the_query->have_posts()) : while($the_query->have_posts()) : $the_query->the_post(); ?>
+			<li class="newsListBox_list"><time><?php the_time("Y.m.d"); ?></time><div><?php the_content(); ?></div></li>
+	<?php endwhile; endif; wp_reset_postdata(); ?>
 		</ul>
 	</section>
 
-	<?php get_template_part('inc/footer'); ?>
+	<?php get_template_part('inc/contactlink'); ?>
 </div>
 
 </div>
-<?php get_template_part('inc/wisdom'); ?>
+<?php get_template_part('inc/footer'); ?>
 
 <script>
 const throttleFunc = (() => {
@@ -300,8 +265,6 @@ const throttleFunc = (() => {
 })();
 window.addEventListener('DOMContentLoaded', throttleFunc, false);
 window.addEventListener('scroll', throttleFunc, false);
-
-new WOW({offset: 200}).init();
 </script>
 </body>
 </html>

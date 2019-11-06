@@ -13,4 +13,6 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style_sp.css" media="screen and (max-width: 767px)">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" media="screen and (min-width: 768px)">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
 <?php wp_head(); ?>

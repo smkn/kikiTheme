@@ -38,5 +38,5 @@ function email_login( $user, $username, $password ) {
 	}
 	return wp_authenticate_username_password( null, $username, $password );
 }
-add_filter('authenticate', 'email_login', 20, 3);
+//add_filter('authenticate', 'email_login', 20, 3);
 

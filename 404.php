@@ -8,21 +8,18 @@
 
 <?php get_template_part('inc/header'); ?>
 
+<div id="content">
+	<?php get_template_part('inc/menu'); ?>
 
+	<section class="content_sectionBox">
+		<h1 class="headlinePage headlineFirst pageTitle" data-pageTitle="<?php echo ucfirst(str_replace('-', ' ', $post->post_name)); ?>"><?php echo ucfirst(str_replace('-', ' ', $post->post_name)); ?><span><?php echo get_subtitle(); ?></span></h1>
+		<p class="paragraph">お客さまのお探しのページは、削除された、名前が変更された、または現在利用できない可能性があります。<br />お手数ですが、<a href="<?php echo home_url(); ?>">トップページ</a>もしくはナビメニューよりお探しください。</p>
+	</section>
 
-<div id="contents">
-	<article class="pnf_404">
-		<h2>Error 404 - Page Not Found</h2>
-	</article>
-
-	<aside><?php get_template_part('inc/sidebar'); ?></aside>
+	<?php get_template_part('inc/contactlink'); ?>
 </div>
 
-
-
+</div>
 <?php get_template_part('inc/footer'); ?>
-
-</div><!-- /#wrap -->
-<?php wp_footer(); ?>
 </body>
 </html>

@@ -18,7 +18,7 @@ add_filter('tiny_mce_before_init', 'extend_tiny_mce_before_init');
 
 
 // アイキャッチ機能
-//add_theme_support('post-thumbnails');
+add_theme_support('post-thumbnails');
 
 
 

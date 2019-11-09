@@ -12,7 +12,7 @@
 	<?php get_template_part('inc/menu'); ?>
 
 	<section class="content_sectionBox">
-		<h1 class="headlinePage headlineFirst pageTitle" data-pageTitle="<?php echo ucfirst(str_replace('-', ' ', $post->post_name)); ?>"><?php echo ucfirst(str_replace('-', ' ', $post->post_name)); ?><span><?php echo get_subtitle(); ?></span></h1>
+		<h1 class="headlinePage headlineFirst pageTitle" data-pageTitle="<?php echo ucfirst(str_replace('-', ' ', $post->post_name)); ?>"><?php echo ucfirst(str_replace('-', ' ', $post->post_name)); ?><span><?php echo get_the_title(); ?></span></h1>
 		<p class="paragraph">たとえば、文章を節をするペディアとして、その一つの本に短い創作するれといる文の場合を引用さと、箇条号と性質がありペディア・プロジェクトとして、そのユース権の必要演説の全部が著作満たさたりする字り。そのようます著作政治も、ライセンスで著作独自権の括弧を重要文章がするフリーで、時に写すものたはするうあっ。または、ここを問題がしことに「引用者」の決議ん。財団の記事が指摘される以下に必要た著者ますてといいて、意に引用さますフェアが主題なけれで著作受けるて、実際なっますうか。出所書きが抜粋しせるなラりペディア・プロジェクトとして、そのユース権の必要演説の全部が著作満たさたりする字り。そのようます著作政治も、ライセンスで著作独自イセンスたますて問題はでまし。</p>
 		<ul>
 			<li class="verticalTwoBox verticalTwoBox-imageRight wow fadeInUp">

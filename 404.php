@@ -12,8 +12,8 @@
 	<?php get_template_part('inc/menu'); ?>
 
 	<section class="content_sectionBox">
-		<h1 class="headlinePage headlineFirst pageTitle" data-pageTitle="<?php echo ucfirst(str_replace('-', ' ', $post->post_name)); ?>"><?php echo ucfirst(str_replace('-', ' ', $post->post_name)); ?><span><?php echo get_subtitle(); ?></span></h1>
-		<p class="paragraph">お客さまのお探しのページは、削除された、名前が変更された、または現在利用できない可能性があります。<br />お手数ですが、<a href="<?php echo home_url(); ?>">トップページ</a>もしくはナビメニューよりお探しください。</p>
+		<h1 class="headlinePage headlineFirst pageTitle" data-pageTitle="404">404 Not Found<span>お探しのページが見つかりませんでした</span></h1>
+		<p class="paragraph">株式会社キキバーブのホームページをご覧いただき、ありがとうございます。<br />指定されたページは削除された、名前が変更された、または現在利用できない可能性があります。<br />お手数ですが、<a href="<?php echo home_url(); ?>">トップページ</a>もしくはナビメニューよりお探しください。</p>
 	</section>
 
 	<?php get_template_part('inc/contactlink'); ?>

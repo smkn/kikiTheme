@@ -245,7 +245,11 @@ a.no-link-effect {
 		margin-bottom: -120px;
 		color: rgba($color-font-default, .05);
 		display: block;
+		max-width: calc(100vw - 70px - 70px);
 		content: attr(data-pageTitle);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: clip;
 	}
 }
 .headlineFirst {
@@ -415,6 +419,7 @@ a.no-link-effect {
 
 		a {
 			display: block;
+			position: relative;
 			color: $color-font-default;
 
 			h3 {
@@ -424,6 +429,20 @@ a.no-link-effect {
 				position: relative;
 				transition: all 0.3s ease;
 				background: linear-gradient(rgba($color-key-sub, .7), rgba($color-key-sub, .7)) 0 100%/0 35% no-repeat;
+			}
+
+			.cardListBox_list_pattern {
+				display: inline-block;
+				padding: 5px;
+				font-size: 11px;
+				color: #fff;
+				position: absolute;
+				left: 5px;
+				top: 5px;
+
+				&.cardListBox_list_pattern_owned {background-color: $color-key-main;}
+				&.cardListBox_list_pattern_order {background-color: adjust-hue($color-key-main, 60deg);}
+				&.cardListBox_list_pattern_advisory {background-color: adjust-hue($color-key-main, 120deg);}
 			}
 
 			.cardListBox_list_picture {

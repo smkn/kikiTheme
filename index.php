@@ -77,6 +77,8 @@
 
 		<ul class="cardListBox">
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_owned">自社サービス</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=1" alt="">
@@ -96,6 +98,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_order">受託開発</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=2" alt="">
@@ -115,6 +119,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_advisory">アドバイザリー</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=3" alt="">
@@ -131,6 +137,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_owned">自社サービス</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=4" alt="">
@@ -148,6 +156,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_order">受託開発</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=5" alt="">
@@ -165,6 +175,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_owned">自社サービス</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=6" alt="">
@@ -180,6 +192,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_owned">自社サービス</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=4" alt="">
@@ -197,6 +211,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_owned">自社サービス</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=5" alt="">
@@ -212,6 +228,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_order">受託開発</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=6" alt="">

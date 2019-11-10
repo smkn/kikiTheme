@@ -12,11 +12,13 @@
 	<?php get_template_part('inc/menu'); ?>
 
 	<section class="content_sectionBox">
-		<h1 class="headlinePage headlineFirst pageTitle" data-pageTitle="<?php echo ucfirst(str_replace('-', ' ', $post->post_name)); ?>"><?php echo ucfirst(str_replace('-', ' ', $post->post_name)); ?><span>WordPressを活用した企業サイトやウェブサービスの制作を中心に、ECサイトやLPなど多様な実績がございます</span></h1>
+		<h1 class="headlinePage headlineFirst pageTitle" data-pageTitle="Works">Works<span>WordPressを活用した企業サイトやウェブサービスの制作を中心に、ECサイトやLPなど多様な実績がございます</span></h1>
 		<p class="paragraph">たとえば、文章を節をするペディアとして、その一つの本に短い創作するれといる文の場合を引用さと、箇条号と性質がありペディア・プロジェクトとして、そのユース権の必要演説の全部が著作満たさたりする字り。そのようます著作政治も、ライセンスで著作独自権の括弧を重要文章がするフリーで、時に写すものたはするうあっ。または、ここを問題がしことに「引用者」の決議ん。財団の記事が指摘される以下に必要た著者ますてといいて、意に引用さますフェアが主題なけれで著作受けるて、実際なっますうか。出所書きが抜粋しせるなラりペディア・プロジェクトとして、そのユース権の必要演説の全部が著作満たさたりする字り。そのようます著作政治も、ライセンスで著作独自イセンスたますて問題はでまし。</p>
 
-		<ul class="cardListBox">
+		<ul class="cardListBox wow fadeInUp" style="visibility: hidden;">
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_owned">自社サービス</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=1" alt="">
@@ -36,6 +38,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_order">受託開発</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=2" alt="">
@@ -55,6 +59,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_advisory">アドバイザリー</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=3" alt="">
@@ -71,6 +77,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_owned">自社サービス</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=4" alt="">
@@ -88,6 +96,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_order">受託開発</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=5" alt="">
@@ -105,6 +115,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_owned">自社サービス</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=6" alt="">
@@ -120,6 +132,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_owned">自社サービス</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=4" alt="">
@@ -137,6 +151,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_owned">自社サービス</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=5" alt="">
@@ -152,6 +168,8 @@
 			</a></li>
 
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_order">受託開発</p>
+
 				<p class="cardListBox_list_picture">
 					<picture>
 						<img src="https://source.unsplash.com/random/400x300?sig=6" alt="">

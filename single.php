@@ -8,34 +8,21 @@
 
 <?php get_template_part('inc/header'); ?>
 
+<div id="content">
+	<?php get_template_part('inc/menu'); ?>
 
-
-<div id="contents">
-	<article>
+	<section class="content_sectionBox">
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-			<div class="post_data"><?php the_time("Y年m月j日"); ?></div>
-			<div class="mceContentBody"><?php the_content(); ?></div>
-		</div>
+		<h1 class="headlinePage headlineFirst pageTitle" data-pageTitle="<?php echo ucfirst(str_replace('-', ' ', $post->post_name)); ?>"><?php echo get_the_title(); ?></h1>
 
-		<div class="postmetadata">
-			<?php the_tags('Tags: ', ', ', '<br />'); ?>
-			Posted in <?php the_category(', ') ?> |
-			<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
-			<?php comments_template(); ?>
-		</div>
+		<div class="paragraph mceContentBody"><?php the_content(); ?></div>
 <?php endwhile; endif; ?>
-	</article>
+	</section>
 
-	<aside><?php get_template_part('inc/sidebar'); ?></aside>
+	<?php get_template_part('inc/contactlink'); ?>
 </div>
 
-
-
+</div>
 <?php get_template_part('inc/footer'); ?>
-
-</div><!-- /#wrap -->
-<?php wp_footer(); ?>
 </body>
 </html>

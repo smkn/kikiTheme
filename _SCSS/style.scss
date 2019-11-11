@@ -298,7 +298,8 @@ a.no-link-effect {
 }
 
 .paragraph {
-	margin: 30px 0;
+	max-width: 1000px;
+	margin: 30px auto;
 }
 
 .pubDate {
@@ -515,22 +516,9 @@ a.no-link-effect {
 }
 
 // single
-.single_content_sectionBox {
-	max-width: 1280px;
-	margin: 0 auto;
-
-	.tagListBox_list {
-		margin: 0 8px 0 0;
-		padding: 5px 10px;
-		font-size: 15px;
-		background-color: #fff;
-	}
-}
 #postContent {
-	background-color: #fff;
-	box-shadow: 0 0 10px rgba($color-font-default, .05);
-	padding: 30px;
-	margin-top: 30px;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 

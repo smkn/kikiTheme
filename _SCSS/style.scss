@@ -333,6 +333,7 @@ a.no-link-effect {
 
 	.verticalTwoBox_content {
 		background-color: #fff;
+		width: 100%;
 		padding: 30px;
 		box-shadow: 0 0 10px rgba($color-font-default, .05);
 
@@ -372,6 +373,18 @@ a.no-link-effect {
 		}
 	}
 }
+
+.verticalTwoBox_content_datalist {
+
+	dt {
+		margin-top: 15px;
+	}
+	dd {
+		margin-left: 30px;
+	}
+}
+
+
 
 .readmore {
 	margin-top: 30px;
@@ -480,6 +493,61 @@ a.no-link-effect {
 			flex-basis: 90px;
 		}
 	}
+}
+
+.mw_wp_form {
+
+	table {
+		width: 100%;
+		border-top: 1px solid $color-border;
+
+		th, td {
+			padding: 30px;
+			border-bottom: 1px solid $color-border;
+		}
+		th {
+			background-color: rgba($color-font-lighten, .1);
+			width: 240px;
+
+			.form_requiredMark {
+				display: block;
+				font-size: 12px;
+				color: #c40;
+			}
+		}
+		td {
+			input, select, textarea {
+				padding: 10px;
+			}
+			textarea {
+				height: 200px;
+			}
+		}
+	}
+
+	#formSubmitBox {
+		text-align: center;
+		margin-top: 30px;
+
+		input, button {
+			padding: 20px 100px;
+			margin: 0 10px;
+			cursor: pointer;
+			font-size: 18px;
+
+			&[name="submitConfirm"], &[name="submitButton"] {
+				background-color: $color-key-main;
+				color: #fff;
+				border: none;
+
+				&:hover, &:focus {
+					animation: pulse 1s;
+					box-shadow: 0 0 0 50px rgba($color-key-main, 0);
+				}
+			}
+		}
+	}
+
 }
 
 

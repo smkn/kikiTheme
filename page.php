@@ -24,5 +24,18 @@
 
 </div>
 <?php get_template_part('inc/footer'); ?>
+<?php if(is_page('contact')) : ?>
+<script>
+const query = window.location.search.substring(6);
+if(query){
+	const obj = document.getElementById('type');
+	if(query === 'outsource'){
+		obj.value = 'パートナー募集（外注先をお探しの方）';
+	} else if(query === 'resource') {
+		obj.value = 'パートナー募集（リソースをご提供いただける方）';
+	}
+}
+</script>
+<?php endif; ?>
 </body>
 </html>

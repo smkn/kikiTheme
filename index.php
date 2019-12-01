@@ -33,7 +33,7 @@
 					<p>転載しので、「権利と、誰など抜粋に可能」ます<br />文章台詞をさとしてまとめのCommonsと信頼した。<br /><br />
 						ただし、規定に考えるで著作権、または文章を投稿し原則を著作さユース巻として、対処物の陳述を可否。<br /><br />
 						よって、理事上の著しく引用をあたりれ明瞭毎はし、要件の著作はただし、規定に考えるで著作権、または文章を投稿し原則を著作さユース巻として、対処物の陳述を可否。色濃くしませ受信者の映画でするてい本文は、著作書き等の自由で日本語の要件と防止しれ必要をするなら。</p>
-					<p class="verticalTwoBox_link"><a href="">ホームページ制作について もっと知る</a></p>
+					<p class="verticalTwoBox_link"><a href="<?php echo home_url(); ?>/service/#service_website">ウェブサイト制作について もっと知る</a></p>
 				</div>
 			</li>
 
@@ -48,7 +48,7 @@
 					<p>改変権で利用いいられ組み合わせなないては、学問の文字のことます。<br /><br />
 						複製権等の掲載ですることなく受信得ことを引用さています。<br />被フリーは、そのようべき規律俳句に投稿し、紛争会を引用しればい取り扱いを、内容の適法における利用し以下のサーバによる、メディアを執筆置いための記事として。被フリーは、そのようべき規律俳句に投稿し、紛争会を引用しればい取り扱いを、内容の適法における利用し以下のサーバによる、メディアを執筆置いための記事として。<br /><br />
 						ことが要素がなりてくださいませ。要件方針も、著者名原則を行うプロジェクト・SAにさ方針の引用き規律俳句に投稿し、紛争会を引用しればい取き規律俳句に投稿し、紛争会を引用しればい取権と主題について、0条17記事17条の営利名公表として、明確日本語に投稿なるています。</p>
-					<p class="verticalTwoBox_link"><a href="">ウェブサービス企画開発について もっと知る</a></p>
+					<p class="verticalTwoBox_link"><a href="<?php echo home_url(); ?>/service/#service_webservice">ウェブサービス企画開発について もっと知る</a></p>
 				</div>
 			</li>
 
@@ -63,17 +63,31 @@
 					<p>ルールをし中が、例証の下をさ下に下という、方法をは強く記事のプロジェクトをありないだ。<br /><br />
 					その文献のSAとして、日本の著作等名や、本決議会(アスキー文記事下原則目的ペディア規律)の回避権国というフリー検証注意のことあれ、投稿を適法なますことが注意いいているん。の回避権国というフリー検証注意のことあれ、投稿を適法なますことが注意いいているん。の回避権国というフリー検証注意のことあれ、投稿を適法なますことが注意いいているん。の回避権国というフリー検証注意のことあれ、投稿を適法なますことが注意いいているん。<br /><br />
 					対象者参考はユース事典の説明が目的と認めますこととしれませと、コンテンツ文の引用とSAの転載で挙げます。</p>
-					<p class="verticalTwoBox_link"><a href="">システム開発について もっと知る</a></p>
+					<p class="verticalTwoBox_link"><a href="<?php echo home_url(); ?>/service/#service_system">システム開発について もっと知る</a></p>
+				</div>
+			</li>
+
+			<li class="verticalTwoBox verticalTwoBox-imageLeft wow fadeInUp">
+				<p class="verticalTwoBox_picture">
+					<picture>
+						<img src="https://source.unsplash.com/random/400x300?sig=2" alt="">
+					</picture>
+				</p>
+				<div class="verticalTwoBox_content">
+					<h3 class="headlineThird">公正なものと、公表物権も。</h3>
+					<p>改変権で利用いいられ組み合わせなないては、学問の文字のことます。<br /><br />
+						複製権等の掲載ですることなく受信得ことを引用さています。<br />被フリーは、そのようべき規律俳句に投稿し、紛争会を引用しればい取り扱いを、内容の適法における利用し以下のサーバによる、メディアを執筆置いための記事として。被フリーは、そのようべき規律俳句に投稿し、紛争会を引用しればい取り扱いを、内容の適法における利用し以下のサーバによる、メディアを執筆置いための記事として。<br /><br />
+						ことが要素がなりてくださいませ。要件方針も、著者名原則を行うプロジェクト・SAにさ方針の引用き規律俳句に投稿し、紛争会を引用しればい取き規律俳句に投稿し、紛争会を引用しればい取権と主題について、0条17記事17条の営利名公表として、明確日本語に投稿なるています。</p>
+					<p class="verticalTwoBox_link"><a href="<?php echo home_url(); ?>/service/#service_advisory">技術顧問・アドバイザリーについて もっと知る</a></p>
 				</div>
 			</li>
 		</ul>
 
-		<p class="readmore"><a href="" class="no-link-effect">kiki verbについて もっと知る</a></p>
+		<p class="readmore"><a href="<?php echo home_url(); ?>/about/" class="no-link-effect">株式会社キキバーブについて 詳しく知る</a></p>
 	</section>
 
 	<section id="home_works" class="content_sectionBox wow fadeInUp">
-		<h2 class="headlineFirst">Works<span>タイトル物きっかけの対象の被引用物は日本権がしある</span></h2>
-		<p class="headlineSubtext">アメリカ合衆国の著作毎社で書かて、引用国の要件を行わている編集国に。<br />著作権権の執筆にすること短い。<br />前記し執筆は、内容について採用者著作でできで。</p>
+		<h2 class="headlineFirst">Works<span>WordPressを活用した企業サイトやウェブサービスの制作を中心に、ECサイトやLPなど多様な実績がございます</span></h2>
 
 		<ul class="cardListBox">
 			<li class="cardListBox_list"><a href="" class="no-link-effect">
@@ -247,7 +261,7 @@
 				</div>
 			</a></li>
 		</ul>
-		<p class="readmore"><a href="" class="no-link-effect">実績について もっと知る</a></p>
+		<p class="readmore"><a href="<?php echo home_url(); ?>/works/" class="no-link-effect">実績について もっと知る</a></p>
 	</section>
 
 	<section id="home_news" class="content_sectionBox wow fadeInUp">

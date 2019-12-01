@@ -300,6 +300,10 @@ a.no-link-effect {
 .paragraph {
 	max-width: 1000px;
 	margin: 30px auto;
+
+	strong {
+		font-weight: normal;
+	}
 }
 
 .pubDate {
@@ -538,16 +542,19 @@ a.no-link-effect {
 			&[name="submitConfirm"], &[name="submitButton"] {
 				background-color: $color-key-main;
 				color: #fff;
-				border: none;
+				border: 1px solid transparent;
+				transition: all 0.3s ease;
 
 				&:hover, &:focus {
 					animation: pulse 1s;
 					box-shadow: 0 0 0 50px rgba($color-key-main, 0);
+					color: $color-key-main;
+					border: 1px solid $color-key-main;
+					background-color: #fff;
 				}
 			}
 		}
 	}
-
 }
 
 

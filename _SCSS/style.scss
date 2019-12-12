@@ -302,7 +302,12 @@ a.no-link-effect {
 	margin: 30px auto;
 
 	strong {
-		font-weight: normal;
+		font-weight: 300;
+	}
+	.attention_small {
+		font-size: 12px;
+		padding: 0 5px;
+		color: $color-font-lighten;
 	}
 }
 
@@ -565,6 +570,8 @@ a.no-link-effect {
 // home
 #home_eyecatch {
 	background: url('img/eyecatch.png') no-repeat center center / cover;
+	background-color: rgba($color-font-default, .5);
+	background-blend-mode: multiply;
 	height: 640px;
 	padding: 0 40px;
 	color: #fff;
@@ -574,18 +581,24 @@ a.no-link-effect {
 	&_inbox {
 
 		p {
-			font-size: 92px;
+			font-size: 7vw;
+			@media screen and (min-width: 1500px) {font-size: 105px;}
 			text-transform: uppercase;
 			font-weight: 700;
-			line-height: 1.1;
+			line-height: 1.2;
 
-			span {
+			& > span {
 				background: linear-gradient(transparent 55%, rgba(255, 255, 255, .2) 55%, rgba(255, 255, 255, .2) 90%, transparent 90%);
+
+				span {
+					color: $color-key-main;
+				}
 			}
 		}
 		h1 {
 			margin-top: 40px;
 			font-size: 30px;
+			letter-spacing: 1px;
 		}
 	}
 }

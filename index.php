@@ -21,7 +21,7 @@
 	<section id="home_about" class="content_sectionBox">
 		<h2 class="headlineSecond">ビジネス課題を技術の力で解決に導き<br />関わる全ての人と幸せを分かち合うために。</h2>
 		<p>株式会社キキバーブは東京都調布市を拠点に活動するWeb制作会社です。<br />
-		2011年の創業から数多くのクライアントとご縁を頂き、多種多様な課題解決に携わるなかで、真に効果的なソリューションをご提案するためには、「課題の本質を深く知り抜くこと」「取捨選択できるだけの知識と技術力」「忌憚なく、でも心配りを忘れないコミュニケーション」が必要であると強く感じます。<br />
+		2011年の創業から数多くのクライアントとご縁を頂き、多種多様な課題解決に携わるなかで、真に効果的なソリューションをご提案するためには、「課題の本質を深く知り抜くこと」「取捨選択できるだけの知識と技術力」「率直に、でも心配りを忘れないコミュニケーション」が必要であると強く感じます。<br />
 		自分たちだけに都合の良いフォーマットに課題を無理やり当てはめてみても、根本の解決にはたどり着けません。<br />
 		適切な解法が見つからなかったり、見つかってもそれを実装する技術力がなければ、ただの理想論となってしまいます。<br />
 		お互いの顔色を伺いすぎてしまったり、逆に一方的なコミュニケーションになってしまったら満足な結果を得ることは出来ません。<br />
@@ -30,7 +30,7 @@
 			<li class="verticalTwoBox verticalTwoBox-imageRight wow fadeInUp">
 				<p class="verticalTwoBox_picture">
 					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=1" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/img_services_website.png" alt="">
 					</picture>
 				</p>
 				<div class="verticalTwoBox_content">
@@ -47,7 +47,7 @@
 			<li class="verticalTwoBox verticalTwoBox-imageLeft wow fadeInUp">
 				<p class="verticalTwoBox_picture">
 					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=2" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/img_services_system.png" alt="">
 					</picture>
 				</p>
 				<div class="verticalTwoBox_content">
@@ -64,7 +64,7 @@
 			<li class="verticalTwoBox verticalTwoBox-imageRight wow fadeInUp">
 				<p class="verticalTwoBox_picture">
 					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=3" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/img_services_webservice.png" alt="">
 					</picture>
 				</p>
 				<div class="verticalTwoBox_content">
@@ -79,7 +79,7 @@
 			<li class="verticalTwoBox verticalTwoBox-imageLeft wow fadeInUp">
 				<p class="verticalTwoBox_picture">
 					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=2" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/img_services_advisory.png" alt="">
 					</picture>
 				</p>
 				<div class="verticalTwoBox_content">

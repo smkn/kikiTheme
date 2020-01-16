@@ -1,4 +1,4 @@
-<p id="wisdom">All it takes is courage, imagination… and a little dough.</p>
+<p id="wisdom"><?php echo_wisdom(); ?></p>
 
 <script>
 new WOW({offset: 200}).init();

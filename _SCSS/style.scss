@@ -296,6 +296,14 @@ a.no-link-effect {
 	text-align: center;
 	margin: -10px 0 30px;
 }
+.headlineSingle {
+	text-align: center;
+
+	&.headlineSecond {
+		font-size: 32px;
+		margin-top: 60px;
+	}
+}
 
 .paragraph {
 	max-width: 1000px;
@@ -416,6 +424,36 @@ a.no-link-effect {
 	}
 }
 
+.post_navigation {
+	overflow: hidden;
+	background-color: #eee;
+	width: 100%;
+	margin-top: 50px;
+
+	& > div {
+		width: 50%;
+
+		a {
+			padding: 10px;
+			display: block;
+			text-align: center;
+			position: relative;
+			background: none;
+
+			&:hover {
+				background-color: #dbdbdb;
+			}
+		}
+	}
+
+	.prev {
+		float: left;
+	}
+	.next {
+		float: right;
+	}
+}
+
 .cardListBox {
 	font-size: 0;
 	margin-left: -20px;
@@ -473,6 +511,7 @@ a.no-link-effect {
 
 				img {
 					width: 100%;
+					height: auto;
 				}
 			}
 			.cardListBox_list_content {
@@ -607,6 +646,30 @@ a.no-link-effect {
 #postContent {
 	max-width: 1000px;
 	margin: 0 auto;
+
+	.works_summary {
+		margin-top: 30px;
+
+		table {
+			width: 100%;
+			border-top: 1px solid $color-border;
+
+			th, td {
+				border-bottom: 1px solid $color-border;
+				padding: 10px 0;
+			}
+			th {
+				width: 200px;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.works_mainImage {
+		img {
+			height: auto;
+		}
+	}
 }
 
 

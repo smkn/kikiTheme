@@ -23,7 +23,8 @@ add_theme_support('post-thumbnails');
 
 
 // サムネイルサイズ設定
-add_image_size('thumb_square', 600, 9999, false);
+add_image_size('thumb_square', 800, 9999, false);
+add_image_size('thumb_square_cut', 800, 600, false);
 add_image_size('thumb_retina', 1600, 9999, false);
 add_image_size('thumb_ogp', 1200, 630, true);
 

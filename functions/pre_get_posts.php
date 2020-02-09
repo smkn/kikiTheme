@@ -8,28 +8,25 @@ function modify_main_query( $query ) {
 		exit;
 	}
 
-	if ( $query->is_category() ) {
-		$query->set( 'posts_per_page', '5' );
+	if ( $query->is_post_type_archive( 'works' ) ) {
+		$query->set( 'posts_per_page', 15 );
+		if(wp_get_current_user()->roles[0] === 'administrator'){
+			$query->set( 'post_type', array('works', 'secret') );
+			return;
+		}
+	}
+
+	if ( $query->is_post_type_archive( 'secret' ) ) {
+		$query->set( 'posts_per_page', 15 );
+		if(wp_get_current_user()->roles[0] !== 'administrator'){
+			wp_redirect( home_url('/404.php') );
+			exit;
+		}
+	}
+
+	if ( $query->is_tax() ) {
+		$query->set( 'post_type', 'works' );
 		return;
 	}
-//	is_home() // TOPページ
-//	is_single() // 詳細ページ
-//	is_singular( 'post_type' ) // カスタム投稿詳細ページ
-//	is_page() // 固定ページ
-//	is_archive() // アーカイブページ
-//	is_post_type_archive( 'post_type' ) // カスタム投稿タイプアーカイブページ カスタム投稿タイプを入れてください
-//	is_date() // 日付アーカイブページ
-//	is_year() // 年別アーカイブページ
-//	is_month() // 月別アーカイブページ
-//	is_author() // 制作者アーカイブページ
-//	is_category() // カテゴリーページ
-//	is_category( array(3,'foo','Bar bar') ) // カテゴリーページ 配列での指定(カテゴリID3,カテゴリスラッグfoo,カテゴリ名Bar barのいずれか)
-//	is_tag() // タグページ
-//	is_tax() // タクソノミーページ
-//	is_tax( 'foo' ) // タクソノミーページ fooというスラッグのタクソノミーアーカイブが表示された
-//	is_tax( 'foo', array('bar1','bar2') ) // タクソノミーページ bar1,bar2のスラッグがfooタクソノミーアーカイブで表示された時
-//	is_search() // 検索結果ページ
-//	is_feed() // フィードページ
-//	is_404() // 404ページ
 }
 add_action( 'pre_get_posts', 'modify_main_query' );

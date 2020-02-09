@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+if(wp_get_current_user()->roles[0] !== 'administrator' && is_singular( 'secret' )){
+	wp_redirect( home_url('/404.php') );
+	exit;
+}
+?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <?php get_template_part('inc/meta'); ?>
@@ -13,56 +18,52 @@
 
 	<section class="content_sectionBox">
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-		<h1 class="headlinePage headlineFirst pageTitle" data-pageTitle="<?php echo ucfirst(str_replace('-', ' ', $post->post_name)); ?>"><?php echo get_the_title(); ?></h1>
+		<h1 class="headlinePage headlineFirst pageTitle" data-pageTitle="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></h1>
+		<div id="postContent" class="mceContentBody">
+			<div class="works_leadline">
+				<p class="paragraph"><?php echo nl2br(get_the_excerpt()); ?></p>
+			</div>
 
-		<div id="postContent" class="mceContentBody"><?php the_content(); ?></div>
-		<ul>
-			<li class="verticalTwoBox verticalTwoBox-imageRight wow fadeInUp">
-				<p class="verticalTwoBox_picture">
-					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=1" alt="">
-					</picture>
-				</p>
-				<div class="verticalTwoBox_content">
-					<h3 class="headlineThird">漏洩権に転載されている記事からShareAlike</h3>
-					<p>転載しので、「権利と、誰など抜粋に可能」ます<br />文章台詞をさとしてまとめのCommonsと信頼した。<br /><br />
-						ただし、規定に考えるで著作権、または文章を投稿し原則を著作さユース巻として、対処物の陳述を可否。<br /><br />
-						よって、理事上の著しく引用をあたりれ明瞭毎はし、要件の著作はただし、規定に考えるで著作権、または文章を投稿し原則を著作さユース巻として、対処物の陳述を可否。色濃くしませ受信者の映画でするてい本文は、著作書き等の自由で日本語の要件と防止しれ必要をするなら。</p>
-					<p class="verticalTwoBox_link"><a href="">ホームページ制作について もっと知る</a></p>
-				</div>
-			</li>
+			<div class="works_mainImage">
+				<picture>
+					<?php the_post_thumbnail(); ?>
+				</picture>
+			</div>
 
-			<li class="verticalTwoBox verticalTwoBox-imageLeft wow fadeInUp">
-				<p class="verticalTwoBox_picture">
-					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=2" alt="">
-					</picture>
-				</p>
-				<div class="verticalTwoBox_content">
-					<h3 class="headlineThird">公正なものと、公表物権も。</h3>
-					<p>改変権で利用いいられ組み合わせなないては、学問の文字のことます。<br /><br />
-						複製権等の掲載ですることなく受信得ことを引用さています。<br />被フリーは、そのようべき規律俳句に投稿し、紛争会を引用しればい取り扱いを、内容の適法における利用し以下のサーバによる、メディアを執筆置いための記事として。被フリーは、そのようべき規律俳句に投稿し、紛争会を引用しればい取り扱いを、内容の適法における利用し以下のサーバによる、メディアを執筆置いための記事として。<br /><br />
-						ことが要素がなりてくださいませ。要件方針も、著者名原則を行うプロジェクト・SAにさ方針の引用き規律俳句に投稿し、紛争会を引用しればい取き規律俳句に投稿し、紛争会を引用しればい取権と主題について、0条17記事17条の営利名公表として、明確日本語に投稿なるています。</p>
-					<p class="verticalTwoBox_link"><a href="">ウェブサービス企画開発について もっと知る</a></p>
-				</div>
-			</li>
-
-			<li class="verticalTwoBox verticalTwoBox-imageRight wow fadeInUp">
-				<p class="verticalTwoBox_picture">
-					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=3" alt="">
-					</picture>
-				</p>
-				<div class="verticalTwoBox_content">
-					<h3 class="headlineThird">他者該当も、作家・ライセンスをでき記事は対象</h3>
-					<p>ルールをし中が、例証の下をさ下に下という、方法をは強く記事のプロジェクトをありないだ。<br /><br />
-					その文献のSAとして、日本の著作等名や、本決議会(アスキー文記事下原則目的ペディア規律)の回避権国というフリー検証注意のことあれ、投稿を適法なますことが注意いいているん。の回避権国というフリー検証注意のことあれ、投稿を適法なますことが注意いいているん。の回避権国というフリー検証注意のことあれ、投稿を適法なますことが注意いいているん。の回避権国というフリー検証注意のことあれ、投稿を適法なますことが注意いいているん。<br /><br />
-					対象者参考はユース事典の説明が目的と認めますこととしれませと、コンテンツ文の引用とSAの転載で挙げます。</p>
-					<p class="verticalTwoBox_link"><a href="">システム開発について もっと知る</a></p>
-				</div>
-			</li>
-		</ul>
+			<div><?php the_content(); ?></div>
+		</div>
 <?php endwhile; endif; ?>
+
+		<div class="works_relatedPosts">
+			<h2 class="headlineSecond headlineSingle">関連する実績</h2>
+			<ul class="cardListBox">
+<?php
+$target_post_type = (wp_get_current_user()->roles[0] === 'administrator')?array('works', 'secret'):'works';
+$rand_seed = (int)$post->ID + (int)date('d');
+$the_query = new WP_Query(array('posts_per_page' => 3, 'post_type' => $target_post_type, 'orderby' => "RAND($rand_seed)"));
+?>
+<?php if($the_query->have_posts()) : while($the_query->have_posts()) : $the_query->the_post(); ?>
+				<li class="cardListBox_list"><a href="<?php the_permalink(); ?>" class="no-link-effect">
+					<p class="cardListBox_list_pattern cardListBox_list_pattern_<?php echo get_the_terms( $post->ID, 'pattern' )[0]->slug; ?>"><?php echo get_the_terms( $post->ID, 'pattern' )[0]->name; ?></p>
+
+					<p class="cardListBox_list_picture">
+						<picture>
+							<?php the_post_thumbnail('thumb_square'); ?>
+						</picture>
+					</p>
+
+					<div class="cardListBox_list_content">
+						<h3 class="headlineThird"><?php echo get_the_title(); ?></h3>
+						<ul class="tagListBox">
+			<?php foreach(get_the_terms( $post->ID, 'part' ) as $v) : ?>
+							<li class="tagListBox_list"><?php echo $v->name; ?></li>
+			<?php endforeach; ?>
+						</ul>
+					</div>
+				</a></li>
+<?php endwhile; endif; wp_reset_postdata(); ?>
+			</ul>
+		</div>
 	</section>
 
 	<?php get_template_part('inc/contactlink'); ?>

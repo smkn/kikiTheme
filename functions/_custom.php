@@ -40,3 +40,10 @@ function email_login( $user, $username, $password ) {
 }
 //add_filter('authenticate', 'email_login', 20, 3);
 
+
+
+// 抜粋文の文字数制限を撤回
+function twpp_change_excerpt_length( $length ) {
+	return 9999;
+}
+add_filter( 'excerpt_length', 'twpp_change_excerpt_length', 999 );

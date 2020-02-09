@@ -100,176 +100,27 @@
 		<h2 class="headlineFirst">Works<span>WordPressを活用した企業サイトやウェブサービスの制作を中心に、ECサイトやLPなど多様な実績がございます</span></h2>
 
 		<ul class="cardListBox">
-			<li class="cardListBox_list"><a href="" class="no-link-effect">
-				<p class="cardListBox_list_pattern cardListBox_list_pattern_owned">自社サービス</p>
+	<?php $the_query = new WP_Query(array('posts_per_page' => 9, 'post_type' => 'works', 'orderby' => 'post_date', 'order' => 'DESC')); ?>
+	<?php if($the_query->have_posts()) : while($the_query->have_posts()) : $the_query->the_post(); ?>
+			<li class="cardListBox_list"><a href="<?php the_permalink(); ?>" class="no-link-effect">
+				<p class="cardListBox_list_pattern cardListBox_list_pattern_<?php echo get_the_terms( $post->ID, 'pattern' )[0]->slug; ?>"><?php echo get_the_terms( $post->ID, 'pattern' )[0]->name; ?></p>
 
 				<p class="cardListBox_list_picture">
 					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=1" alt="">
+						<?php the_post_thumbnail('thumb_square'); ?>
 					</picture>
 				</p>
 
 				<div class="cardListBox_list_content">
-					<h3 class="headlineThird">7条1項が受けるで要求ませますて</h3>
+					<h3 class="headlineThird"><?php echo get_the_title(); ?></h3>
 					<ul class="tagListBox">
-						<li class="tagListBox_list">デザイン</li>
-						<li class="tagListBox_list">コーディング</li>
-						<li class="tagListBox_list">システム構築</li>
-						<li class="tagListBox_list">仕様設計</li>
-						<li class="tagListBox_list">運用サポート</li>
+		<?php foreach(get_the_terms( $post->ID, 'part' ) as $v) : ?>
+						<li class="tagListBox_list"><?php echo $v->name; ?></li>
+		<?php endforeach; ?>
 					</ul>
 				</div>
 			</a></li>
-
-			<li class="cardListBox_list"><a href="" class="no-link-effect">
-				<p class="cardListBox_list_pattern cardListBox_list_pattern_order">受託開発</p>
-
-				<p class="cardListBox_list_picture">
-					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=2" alt="">
-					</picture>
-				</p>
-
-				<div class="cardListBox_list_content">
-					<h3 class="headlineThird">編集権性の除外をしれなけれ著作に明確</h3>
-					<ul class="tagListBox">
-						<li class="tagListBox_list">デザイン</li>
-						<li class="tagListBox_list">コーディング</li>
-						<li class="tagListBox_list">システム構築</li>
-						<li class="tagListBox_list">仕様設計</li>
-						<li class="tagListBox_list">運用サポート</li>
-					</ul>
-				</div>
-			</a></li>
-
-			<li class="cardListBox_list"><a href="" class="no-link-effect">
-				<p class="cardListBox_list_pattern cardListBox_list_pattern_advisory">アドバイザリー</p>
-
-				<p class="cardListBox_list_picture">
-					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=3" alt="">
-					</picture>
-				</p>
-
-				<div class="cardListBox_list_content">
-					<h3 class="headlineThird">URLの条をしば、重要ない参照で執筆するからは以上1そこで3のコモンズが場合定め必要がすると基づきればいる</h3>
-					<ul class="tagListBox">
-						<li class="tagListBox_list">コーディング</li>
-						<li class="tagListBox_list">仕様設計</li>
-					</ul>
-				</div>
-			</a></li>
-
-			<li class="cardListBox_list"><a href="" class="no-link-effect">
-				<p class="cardListBox_list_pattern cardListBox_list_pattern_owned">自社サービス</p>
-
-				<p class="cardListBox_list_picture">
-					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=4" alt="">
-					</picture>
-				</p>
-
-				<div class="cardListBox_list_content">
-					<h3 class="headlineThird">被プライバシーもこの下をできる</h3>
-					<ul class="tagListBox">
-						<li class="tagListBox_list">デザイン</li>
-						<li class="tagListBox_list">システム構築</li>
-						<li class="tagListBox_list">運用サポート</li>
-					</ul>
-				</div>
-			</a></li>
-
-			<li class="cardListBox_list"><a href="" class="no-link-effect">
-				<p class="cardListBox_list_pattern cardListBox_list_pattern_order">受託開発</p>
-
-				<p class="cardListBox_list_picture">
-					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=5" alt="">
-					</picture>
-				</p>
-
-				<div class="cardListBox_list_content">
-					<h3 class="headlineThird">規律でしものにより引用者が著作します制定でするりて、成立法ルール権</h3>
-					<ul class="tagListBox">
-						<li class="tagListBox_list">コーディング</li>
-						<li class="tagListBox_list">システム構築</li>
-						<li class="tagListBox_list">仕様設計</li>
-					</ul>
-				</div>
-			</a></li>
-
-			<li class="cardListBox_list"><a href="" class="no-link-effect">
-				<p class="cardListBox_list_pattern cardListBox_list_pattern_owned">自社サービス</p>
-
-				<p class="cardListBox_list_picture">
-					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=6" alt="">
-					</picture>
-				</p>
-
-				<div class="cardListBox_list_content">
-					<h3 class="headlineThird">明記権の事前をするが利用反するれませ利用権も、参照第2007フリーの「まず依頼しれるからい紹介物」を用意しれことをしで</h3>
-					<ul class="tagListBox">
-						<li class="tagListBox_list">運用サポート</li>
-					</ul>
-				</div>
-			</a></li>
-
-			<li class="cardListBox_list"><a href="" class="no-link-effect">
-				<p class="cardListBox_list_pattern cardListBox_list_pattern_owned">自社サービス</p>
-
-				<p class="cardListBox_list_picture">
-					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=4" alt="">
-					</picture>
-				</p>
-
-				<div class="cardListBox_list_content">
-					<h3 class="headlineThird">日本権1項がする記事GFDL</h3>
-					<ul class="tagListBox">
-						<li class="tagListBox_list">システム構築</li>
-						<li class="tagListBox_list">仕様設計</li>
-						<li class="tagListBox_list">運用サポート</li>
-					</ul>
-				</div>
-			</a></li>
-
-			<li class="cardListBox_list"><a href="" class="no-link-effect">
-				<p class="cardListBox_list_pattern cardListBox_list_pattern_owned">自社サービス</p>
-
-				<p class="cardListBox_list_picture">
-					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=5" alt="">
-					</picture>
-				</p>
-
-				<div class="cardListBox_list_content">
-					<h3 class="headlineThird">ルール手段物のプロジェクトと紛争区別</h3>
-					<ul class="tagListBox">
-						<li class="tagListBox_list">運用サポート</li>
-					</ul>
-				</div>
-			</a></li>
-
-			<li class="cardListBox_list"><a href="" class="no-link-effect">
-				<p class="cardListBox_list_pattern cardListBox_list_pattern_order">受託開発</p>
-
-				<p class="cardListBox_list_picture">
-					<picture>
-						<img src="https://source.unsplash.com/random/400x300?sig=6" alt="">
-					</picture>
-				</p>
-
-				<div class="cardListBox_list_content">
-					<h3 class="headlineThird">GFDLきっかけ推奨条件32執筆107</h3>
-					<ul class="tagListBox">
-						<li class="tagListBox_list">デザイン</li>
-						<li class="tagListBox_list">コーディング</li>
-						<li class="tagListBox_list">仕様設計</li>
-						<li class="tagListBox_list">運用サポート</li>
-					</ul>
-				</div>
-			</a></li>
+	<?php endwhile; endif; wp_reset_postdata(); ?>
 		</ul>
 		<p class="readmore"><a href="<?php echo home_url(); ?>/works/" class="no-link-effect">実績について もっと知る</a></p>
 	</section>

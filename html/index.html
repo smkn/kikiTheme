@@ -347,22 +347,50 @@ $('a[href^="#"]').click(function(){
 	return false;
 });
 
+// const throttleFunc = (() => {
+// 	const interval = 100;
+// 	let lastTime = new Date().getTime() - interval;
+// 	return () => {
+// 		if ((lastTime + interval) <= new Date().getTime()) {
+// 			lastTime = new Date().getTime();
+// 			if(window.pageYOffset < 610){
+// 				document.getElementById('menu').classList.add('no-bg')
+// 			} else {
+// 				document.getElementById('menu').classList.remove('no-bg')
+// 			}
+// 		}
+// 	};
+// })();
+// window.addEventListener('DOMContentLoaded', throttleFunc, false);
+// window.addEventListener('scroll', throttleFunc, false);
+
+/*
+if(window.matchMedia('screen and (max-width: 767px)').matches){ // スマホのみ
+	document.getElementById('header_btn_menu').addEventListener('click', function(){
+		alert(1);
+	}, false);
+}
+*/
+
+/* setTimeout版（本番ではIntersectionObserverに改良）
+document.getElementById('menu').classList.add('no-bg');
+let timeoutId = null;
 const throttleFunc = (() => {
-	const interval = 100;
-	let lastTime = new Date().getTime() - interval;
-	return () => {
-		if ((lastTime + interval) <= new Date().getTime()) {
-			lastTime = new Date().getTime();
+	if(window.matchMedia('screen and (min-width: 768px)').matches) {
+		clearTimeout(timeoutId);
+		timeoutId = setTimeout(function(){
 			if(window.pageYOffset < 610){
-				document.getElementById('menu').classList.add('no-bg')
+				document.getElementById('menu').classList.add('no-bg');
 			} else {
-				document.getElementById('menu').classList.remove('no-bg')
+				document.getElementById('menu').classList.remove('no-bg');
 			}
-		}
+		}, 50);
 	};
-})();
-window.addEventListener('DOMContentLoaded', throttleFunc, false);
+});
+
 window.addEventListener('scroll', throttleFunc, false);
+window.addEventListener('resize', throttleFunc, false);
+*/
 
 new WOW({offset: 200}).init();
 </script>

@@ -2,6 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <?php get_template_part('inc/meta'); ?>
+<script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script>
 </head>
 <body <?php body_class(); ?>>
 <div id="wrap">
@@ -13,7 +14,7 @@
 
 	<section id="home_eyecatch">
 		<div id="home_eyecatch_inbox">
-			<p><span>Solve <span>problems</span><br />with <span>technology</span> and<br />make people <span>happy</span>.</span></p>
+			<p><span>Solve <span>problems</span><br />with <span>technology</span> and<br />make <span>people</span> happy.</span></p>
 			<h1>株式会社キキバーブは課題と技術と人に寄り添うWeb制作会社です。</h1>
 		</div>
 	</section>
@@ -142,22 +143,19 @@
 <?php get_template_part('inc/footer'); ?>
 
 <script>
-const throttleFunc = (() => {
-	const interval = 100;
-	let lastTime = new Date().getTime() - interval;
-	return () => {
-		if ((lastTime + interval) <= new Date().getTime()) {
-			lastTime = new Date().getTime();
-			if(window.pageYOffset < 610){
-				document.getElementById('menu').classList.add('no-bg')
-			} else {
-				document.getElementById('menu').classList.remove('no-bg')
-			}
+const target = document.getElementById("home_eyecatch");
+function callback(entries, observer){
+	if(window.matchMedia('screen and (min-width: 768px)').matches) {
+		if(entries[0].isIntersecting === true){
+			document.getElementById('menu').classList.add('no-bg');
+		} else {
+			document.getElementById('menu').classList.remove('no-bg');
 		}
 	};
-})();
-window.addEventListener('DOMContentLoaded', throttleFunc, false);
-window.addEventListener('scroll', throttleFunc, false);
+};
+const observer = new IntersectionObserver(callback);
+observer.POLL_INTERVAL = 100;
+observer.observe(target);
 </script>
 </body>
 </html>

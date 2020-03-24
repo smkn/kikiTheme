@@ -20,10 +20,6 @@ if(wp_get_current_user()->roles[0] !== 'administrator' && is_singular( 'secret' 
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 		<h1 class="headlinePage headlineFirst pageTitle" data-pageTitle="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></h1>
 		<div id="postContent" class="mceContentBody">
-			<div class="works_leadline">
-				<p class="paragraph"><?php echo nl2br(get_the_excerpt()); ?></p>
-			</div>
-
 			<div class="works_mainImage">
 				<picture>
 					<?php the_post_thumbnail(); ?>

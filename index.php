@@ -116,7 +116,9 @@
 					<h3 class="headlineThird"><?php echo get_the_title(); ?></h3>
 					<ul class="tagListBox">
 		<?php foreach(get_the_terms( $post->ID, 'part' ) as $v) : ?>
+			<?php if($v->parent === 0) : ?>
 						<li class="tagListBox_list"><?php echo $v->name; ?></li>
+			<?php endif; ?>
 		<?php endforeach; ?>
 					</ul>
 				</div>

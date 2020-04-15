@@ -6,7 +6,7 @@
 // OGP出力 https://saruwakakun.com/html-css/wordpress/ogp
 function my_meta_ogp($ogp_img = false) {
 	$ogp_title = get_bloginfo('description').' | '.get_bloginfo('name');
-	$ogp_descr = '「'.get_bloginfo('name').'」は、'.get_bloginfo('description').'です。私たちは「人には優しく、技術には貪欲に、課題には丁寧に」寄り添うことを命題に掲げ、クライアント、ステークホルダー、株主、従業員、ユーザー、そして私たち自身も、関係するすべての人に幸せを提供し、それを分かち合える会社でありたいと願っています。';
+	$ogp_descr = '株式会社キキバーブは、東京都調布市を拠点に活動するWeb制作会社です。ウェブサイト制作・システム開発・ウェブサービス企画開発・技術顧問についてお困りのことがございましたら、お気軽にお問い合わせください。';
 	$ogp_url = home_url('/');
 	$ogp_img = get_template_directory_uri().'/img/ogp.png';
 

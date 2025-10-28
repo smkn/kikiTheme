@@ -1,7 +1,11 @@
 <meta charset="<?php bloginfo('charset'); ?>">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php if(is_singular('works')) : ?>
+<meta name="robots" content="noindex, nofollow">
+<?php else : ?>
 <meta name="robots" content="index, follow">
+<?php endif; ?>
 <meta name="format-detection" content="telephone=no, address=no, email=no">
 
 <!-- favicon 152x152 png -->
@@ -17,10 +21,10 @@
 
 <?php wp_head(); ?>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21623031-4"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GKW6CQWCFL"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'UA-21623031-4');
+  gtag('config', 'G-GKW6CQWCFL');
 </script>

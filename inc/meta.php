@@ -28,3 +28,5 @@
   gtag('js', new Date());
   gtag('config', 'G-GKW6CQWCFL');
 </script>
+
+<?php get_template_part('inc/schema'); ?>

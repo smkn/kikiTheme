@@ -10,7 +10,7 @@ function modify_main_query( $query ) {
 
 	if ( $query->is_post_type_archive( 'works' ) ) {
 		$query->set( 'posts_per_page', 15 );
-		if(wp_get_current_user()->roles[0] === 'administrator'){
+		if(is_user_logged_in()){
 			$query->set( 'post_type', array('works', 'secret') );
 			return;
 		}
@@ -18,7 +18,7 @@ function modify_main_query( $query ) {
 
 	if ( $query->is_post_type_archive( 'secret' ) ) {
 		$query->set( 'posts_per_page', 15 );
-		if(wp_get_current_user()->roles[0] !== 'administrator'){
+		if(! is_user_logged_in()){
 			wp_redirect( home_url('/404.php') );
 			exit;
 		}

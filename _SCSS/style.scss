@@ -541,6 +541,7 @@ a.no-link-effect {
 	table {
 		width: 100%;
 		border-top: 1px solid $color-border;
+		margin-top: 50px;
 
 		th, td {
 			padding: 30px;
@@ -562,6 +563,9 @@ a.no-link-effect {
 			}
 			textarea {
 				height: 200px;
+			}
+			&#skill_td label {
+				display: block;
 			}
 		}
 	}

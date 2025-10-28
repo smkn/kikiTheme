@@ -1,5 +1,5 @@
 <?php
-if(wp_get_current_user()->roles[0] !== 'administrator' && is_singular( 'secret' )){
+if(! is_user_logged_in() && is_singular( 'secret' )){
 	wp_redirect( home_url('/404.php') );
 	exit;
 }

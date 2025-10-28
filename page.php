@@ -37,5 +37,14 @@ if(query){
 }
 </script>
 <?php endif; ?>
+<?php if(is_page('resource')) : ?>
+<script>
+const obj = document.getElementsByClassName('mw_wp_form_confirm');
+if(obj){
+	const el = document.getElementById("resource_wanted_lists");
+	el.style.display = "none";
+}
+</script>
+<?php endif; ?>
 </body>
 </html>

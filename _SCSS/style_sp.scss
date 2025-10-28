@@ -505,6 +505,7 @@ img, iframe {
 	table {
 		width: 100%;
 		border-top: 1px solid $color-border;
+		margin-top: 10vw;
 
 		th, td {
 			display: block;
@@ -529,6 +530,9 @@ img, iframe {
 			}
 			textarea {
 				height: 50vw;
+			}
+			&#skill_td label {
+				display: block;
 			}
 		}
 	}

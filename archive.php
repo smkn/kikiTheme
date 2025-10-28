@@ -12,7 +12,7 @@
 	<?php get_template_part('inc/menu'); ?>
 
 	<section class="content_sectionBox">
-		<h1 class="headlinePage headlineFirst pageTitle" data-pageTitle="Works">Works<span>WordPressを活用した企業サイトやウェブサービスの制作を中心に、ECサイトやLPなど多様な実績がございます</span></h1>
+		<h1 class="headlinePage headlineFirst pageTitle" data-pageTitle="Works">Works<span>WordPressやLaravelを活用した企業サイトやウェブサービスの制作を中心に、ECサイトやLPなど多様な実績がございます</span></h1>
 	<?php if(!is_paged()) : ?>
 		<p class="paragraph"><strong>コーポレートサイト</strong>、<strong>メディアサイト</strong>、<strong>LP</strong>、<strong>ウェブサービス開発</strong>など、<strong>株式会社キキバーブの制作実績、構築事例</strong>をご紹介致します。<br /><br />
 		2011年に個人事業として創業以来、上流工程の企画段階から実装までお客様と共に作り上げていったプロジェクトから、月間数百万PVの巨大サービスの新規コンテンツページ制作、地場企業のお問い合わせフォーム設置、ASPを使用したECサイトの構築など、多種多様なご依頼を頂いて参りました。<br /><br />
